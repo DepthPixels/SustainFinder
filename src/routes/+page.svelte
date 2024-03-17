@@ -1,5 +1,6 @@
 <div class="chart" bind:this={chartdiv}></div>
 <p>{ country }</p>
+<button><a href="/{ country }">Go!</a></button>
 
 
 <style>

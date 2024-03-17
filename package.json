@@ -17,6 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"@amcharts/amcharts5": "^5.8.5",
-		"@amcharts/amcharts5-geodata": "^5.1.2"
+		"@amcharts/amcharts5-geodata": "^5.1.2",
+		"@vercel/postgres": "^0.7.2"
 	}
 }
