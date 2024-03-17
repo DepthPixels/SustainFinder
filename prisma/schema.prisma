@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model sdgdata {
+  Country                                       String  @id @db.VarChar(512)
+  SDG_Index_Score                               String? @map("2023 SDG Index Score") @db.VarChar(512)
+  SDG_Index_Rank                                String? @map("2023 SDG Index Rank") @db.VarChar(512)
+  Regions_used_for_the_SDR                      String? @map("Regions used for the SDR") @db.VarChar(512)
+  SDG1__No_Poverty                              String? @map("SDG1: No Poverty") @db.VarChar(512)
+  SDG1_TimeSeries                               String? @map("SDG1 TimeSeries") @db.VarChar(512)
+  SDG2__No_Hunger                               String? @map("SDG2: No Hunger") @db.VarChar(512)
+  SDG2_TimeSeries                               String? @map("SDG2 TimeSeries") @db.VarChar(512)
+  SDG3__Good_Health_and_Well_Being              String? @map("SDG3: Good Health and Well-Being") @db.VarChar(512)
+  SDG3_TimeSeries                               String? @map("SDG3 TimeSeries") @db.VarChar(512)
+  SDG4__Quality_Education                       String? @map("SDG4: Quality Education") @db.VarChar(512)
+  SDG4_TimeSeries                               String? @map("SDG4 TimeSeries") @db.VarChar(512)
+  SDG5__Gender_Equality                         String? @map("SDG5: Gender Equality") @db.VarChar(512)
+  SDG5_TimeSeries                               String? @map("SDG5 TimeSeries") @db.VarChar(512)
+  SDG6__Clean_Water_and_Sanitation              String? @map("SDG6: Clean Water and Sanitation") @db.VarChar(512)
+  SDG6_TimeSeries                               String? @map("SDG6 TimeSeries") @db.VarChar(512)
+  SDG7__Affordable_and_Clean_Energy             String? @map("SDG7: Affordable and Clean Energy") @db.VarChar(512)
+  SDG7_TimeSeries                               String? @map("SDG7 TimeSeries") @db.VarChar(512)
+  SDG8__Decent_Work_and_Economic_Growth         String? @map("SDG8: Decent Work and Economic Growth") @db.VarChar(512)
+  SDG8_TimeSeries                               String? @map("SDG8 TimeSeries") @db.VarChar(512)
+  SDG9__Industry__Innovation_and_Infrastructure String? @map("SDG9: Industry, Innovation and Infrastructure") @db.VarChar(512)
+  SDG9_TimeSeries                               String? @map("SDG9 TimeSeries") @db.VarChar(512)
+  SDG10__Reduced_Inequalities                   String? @map("SDG10: Reduced Inequalities") @db.VarChar(512)
+  SDG10_TimeSeries                              String? @map("SDG10 TimeSeries") @db.VarChar(512)
+  SDG11__Sustainable_Cities_and_Communities     String? @map("SDG11: Sustainable Cities and Communities") @db.VarChar(512)
+  SDG11_TimeSeries                              String? @map("SDG11 TimeSeries") @db.VarChar(512)
+  SDG12__Responsible_Consumption_and_Production String? @map("SDG12: Responsible Consumption and Production") @db.VarChar(512)
+  SDG12_TimeSeries                              String? @map("SDG12 TimeSeries") @db.VarChar(512)
+  SDG13__Climate_Action                         String? @map("SDG13: Climate Action") @db.VarChar(512)
+  SDG13_TimeSeries                              String? @map("SDG13 TimeSeries") @db.VarChar(512)
+  SDG14__Life_Below_Water                       String? @map("SDG14: Life Below Water") @db.VarChar(512)
+  SDG14_TimeSeries                              String? @map("SDG14 TimeSeries") @db.VarChar(512)
+  SDG15__Life_on_Land                           String? @map("SDG15: Life on Land") @db.VarChar(512)
+  SDG15_TimeSeries                              String? @map("SDG15 TimeSeries") @db.VarChar(512)
+  SDG16__Peace__Justice_and_Strong_Institutions String? @map("SDG16: Peace, Justice and Strong Institutions") @db.VarChar(512)
+  SDG16_TimeSeries                              String? @map("SDG16 TimeSeries") @db.VarChar(512)
+  SDG17__Partnerships_for_the_Goals             String? @map("SDG17: Partnerships for the Goals") @db.VarChar(512)
+  SDG17_TimeSeries                              String? @map("SDG17 TimeSeries") @db.VarChar(512)
+}
