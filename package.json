@@ -20,6 +20,9 @@
 		"@amcharts/amcharts5": "^5.8.5",
 		"@amcharts/amcharts5-geodata": "^5.1.2",
 		"@prisma/client": "^5.11.0",
+		"@svelteuidev/composables": "^0.15.4",
+		"@svelteuidev/core": "^0.15.4",
+		"@svelteuidev/motion": "^0.15.4",
 		"@vercel/postgres": "^0.7.2"
 	}
 }
